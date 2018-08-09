@@ -7,15 +7,20 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
     background-color: aliceblue;
+    height: 80px;
 }
 
 .menu a{
     font-size: 15px;
     text-decoration: none;
-    margin-left: 15px;
     color: #296cd8;
+    padding: 30.5px;
+}
+
+.menu a:hover{
+    transition: 0.5s;
+    background-color: rgb(168, 214, 255);
 }
 
 header img{
@@ -25,33 +30,71 @@ header img{
     padding-right: 15px;
 }
 
-li{
+.exemplo{
+    text-align: center; /*vai modificar a posição dos blocos*/
+    padding: 0;
+    margin: 0;
+}
+
+.exemplo li{
     list-style: none;
     color: aliceblue;
     font-weight: bold;
-    padding: 10px;
-}
+    padding: 10px; /*padding pra letra nao encostar perto das margens do bloco*/
+    text-align: left;
 
-
-.exemplo li{
     background-color: violet;
-    height: 200px;
     width: 200px;
     display: block;
-    margin-left: 20px;
-    
+    /*margin-left: 20px;*/
+    /*display: inline;*/
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 0;
+    margin-right: 0;
 }
 
-li:nth-child(2){
+.exemplo li:nth-child(2){
     background-color: #f4c141;
-    height: 200px;
     width: 200px;
+    /*visibility:hidden*//*ainda esta la, mas nao da pra ver*/
+    /*display: none*/ /*desaparece mesmo, nao ocupa o espaço*/
     
 }
 
-li:last-child{
+.exemplo li:last-child{
     background-color: blue;
-    height: 200px;
     width: 200px;
+}
+
+.dias{
+    margin: 0;
+}
+
+.dias li{
+    list-style-type: none;
+    width: 967px;
+    padding: 20px;
+    color: white;
+}
+
+.dias li:first-child{
+    background-color: blueviolet;
+}
+
+.dias li:nth-child(2){
+    background-color: darkcyan;
+}
+
+.dias li:nth-child(3){
+    background-color: chocolate;
+}
+
+.dias li:nth-child(4){
+    background-color: coral;
+}
+
+.dias li:last-child{
+    background-color: crimson;
 }
 
